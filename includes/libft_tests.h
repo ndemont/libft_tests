@@ -22,5 +22,6 @@ int		test_memset(void);
 int		test_memcpy(void);
 int		test_bzero(void);
 int		test_memccpy(void);
+int		test_memmove(void);
 
 #endif

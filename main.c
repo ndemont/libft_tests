@@ -27,5 +27,11 @@ int		main()
 	test_memccpy();
 	printf("\n");
 
+	printf(BLUE);
+	printf("%s\n", "TEST FOR MEMMOVE");
+	printf(DEFAULT);
+	test_memmove();
+	printf("\n");
+
 	return (0);
 }
