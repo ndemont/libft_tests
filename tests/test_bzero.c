@@ -10,8 +10,9 @@
 
 jmp_buf reset;
 
-void	termination_handler(int signum)
+void	termination_handler(int signal)
 {
+	(void)signal;
 	longjmp(reset, 1);
 }
 
@@ -27,7 +28,7 @@ int		test_bzero_catch_sigbus()
 		return(1);
 	}
 	signal(SIGBUS, termination_handler);
-	bzero(s1, 3);
+	ft_bzero(s1, 3);
 	printf(RED);
 	printf("[KO] : ft_bzero does not bus error for a non modifiable argument\n");
 	printf(DEFAULT);
@@ -47,7 +48,7 @@ int		test_bzero_catch_segv()
 		return (1);
 	}
 	signal(SIGSEGV, termination_handler);
-	bzero(ptr, 2);
+	ft_bzero(ptr, 2);
 	printf(RED);
 	printf("[KO] : Your bzero does not segmentation fault for a null argument\n");
 	printf(DEFAULT);
@@ -74,7 +75,7 @@ int		test_bzero()
 		return (1);
 	}
 	bzero(s1, 3);
-	bzero(ft_s1, 3);
+	ft_bzero(ft_s1, 3);
 	i = 0;
 	while (i < 3)
 	{

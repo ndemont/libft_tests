@@ -12,7 +12,7 @@ int		main()
 	printf(BLUE);
 	printf("%s\n", "TEST FOR BZERO");
 	printf(DEFAULT);
-	//test_bzero();
+	test_bzero();
 	printf("\n");
 
 	printf(BLUE);

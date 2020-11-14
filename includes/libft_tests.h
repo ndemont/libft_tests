@@ -11,5 +11,6 @@
 
 int		test_memset(void);
 int		test_memcpy(void);
+int		test_bzero(void);
 
 #endif
