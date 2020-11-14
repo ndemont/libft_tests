@@ -8,5 +8,18 @@ int		main()
 	printf(DEFAULT);
 	test_memset();
 	printf("\n");
+
+	printf(BLUE);
+	printf("%s\n", "TEST FOR BZERO");
+	printf(DEFAULT);
+	//test_bzero();
+	printf("\n");
+
+	printf(BLUE);
+	printf("%s\n", "TEST FOR MEMCPY");
+	printf(DEFAULT);
+	test_memcpy();
+	printf("\n");
+
 	return (0);
 }

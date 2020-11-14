@@ -10,5 +10,6 @@
 # define DEFAULT	"\033[0m"
 
 int		test_memset(void);
+int		test_memcpy(void);
 
 #endif
