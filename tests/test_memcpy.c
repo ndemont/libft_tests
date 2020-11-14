@@ -8,6 +8,10 @@ int		test_memcpy()
 	char *nul1 = 0;
 	char twenty[20] = "0000000000000000000\0";
 	char ft_twenty[20] = "0000000000000000000\0";
+	char twenty2[20] = "0000000000000000000\0";
+	char ft_twenty2[20] = "0000000000000000000\0";
+	char twenty3[20] = "0000000000000000000\0";
+	char ft_twenty3[20] = "0000000000000000000\0";
 	char empty[2] = "";
 	char ft_empty[2] = "";
 	char *thirty_a = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\0";
@@ -18,7 +22,7 @@ int		test_memcpy()
 	if (nul1)
 	{
 		printf(RED);
-		printf("[KO] : Your memcpy does not work with NULL dst and src");
+		printf("[KO] : Your memcpy does not work with NULL dst and src\n");
 		printf(DEFAULT);
 	}
 	else
@@ -32,7 +36,7 @@ int		test_memcpy()
 	if (strcmp(twenty, ft_twenty))
 	{
 		printf(RED);
-		printf("[KO] : Your memcpy does not work with n = 1");
+		printf("[KO] : Your memcpy does not work with n = 1\n");
 		printf(DEFAULT);
 	}
 	else 
@@ -41,12 +45,12 @@ int		test_memcpy()
 		printf("[OK]\n");
 		printf(DEFAULT);
 	}
-	memcpy(twenty, thirty_a, 20);
-	ft_memcpy(ft_twenty, thirty_a, 20);
-	if (strcmp(twenty, ft_twenty))
+	memcpy(twenty2, thirty_a, 19);
+	ft_memcpy(ft_twenty2, thirty_a, 19);
+	if (strcmp(twenty2, ft_twenty2))
 	{
 		printf(RED);
-		printf("[KO] : Your memcpy does not work with len = strlen(dst)");
+		printf("[KO] : Your memcpy does not work with len = strlen(dst)\n");
 		printf(DEFAULT);
 	}
 	else 
@@ -55,12 +59,12 @@ int		test_memcpy()
 		printf("[OK]\n");
 		printf(DEFAULT);
 	}
-	memcpy(twenty, thirty_a, 0);
-	ft_memcpy(ft_twenty, thirty_a, 0);
-	if (strcmp(twenty, ft_twenty))
+	memcpy(twenty3, thirty_a, 0);
+	ft_memcpy(ft_twenty3, thirty_a, 0);
+	if (strcmp(twenty3, ft_twenty3))
 	{
 		printf(RED);
-		printf("[KO] : Your memcpy does not work with n = 0)");
+		printf("[KO] : Your memcpy does not work with n = 0\n");
 		printf(DEFAULT);
 	}
 	else 
@@ -74,7 +78,7 @@ int		test_memcpy()
 	if (strcmp(twenty, ft_twenty))
 	{
 		printf(RED);
-		printf("[KO] : Your memcpy does not work with n > strlen(src)");
+		printf("[KO] : Your memcpy does not work with n > strlen(src)\n");
 		printf(DEFAULT);
 	}
 	else
@@ -88,7 +92,7 @@ int		test_memcpy()
 	if (strcmp(twenty, ft_twenty))
 	{
 		printf(RED);
-		printf("[KO] : Your memcpy does not work with empty src");
+		printf("[KO] : Your memcpy does not work with empty src\n");
 		printf(DEFAULT);
 	}
 	else
@@ -102,7 +106,7 @@ int		test_memcpy()
 	if (strcmp(empty, ft_empty))
 	{
 		printf(RED);
-		printf("[KO] : Your memcpy does not work with dst = empty");
+		printf("[KO] : Your memcpy does not work with dst = empty\n");
 		printf(DEFAULT);
 	}
 	else
