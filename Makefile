@@ -1,7 +1,9 @@
 SRCS		=	main.c \
+				tests/term_handle.c \
 				tests/test_memset.c \
 				tests/test_memcpy.c	\
-				tests/test_bzero.c
+				tests/test_bzero.c \
+				tests/test_memccpy.c
 OBJS		=	${SRCS:.c=.o}
 INCLUDES	=	includes
 LIBFT_PATH	=	./libft/

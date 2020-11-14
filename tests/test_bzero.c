@@ -1,21 +1,5 @@
 #include "../includes/libft_tests.h"
 
-//to del.
-#include <string.h>
-#include <stdio.h>
-#include <signal.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <setjmp.h>
-
-jmp_buf reset;
-
-void	termination_handler(int signal)
-{
-	(void)signal;
-	longjmp(reset, 1);
-}
-
 int		test_bzero_catch_sigbus()
 {
 	char *s1 = "\0";
@@ -27,7 +11,7 @@ int		test_bzero_catch_sigbus()
 		printf(DEFAULT);
 		return(1);
 	}
-	signal(SIGBUS, termination_handler);
+	signal(SIGBUS, term_handle);
 	ft_bzero(s1, 3);
 	printf(RED);
 	printf("[KO] : ft_bzero does not bus error for a non modifiable argument\n");
@@ -47,7 +31,7 @@ int		test_bzero_catch_segv()
 		printf(DEFAULT);
 		return (1);
 	}
-	signal(SIGSEGV, termination_handler);
+	signal(SIGSEGV, term_handle);
 	ft_bzero(ptr, 2);
 	printf(RED);
 	printf("[KO] : Your bzero does not segmentation fault for a null argument\n");

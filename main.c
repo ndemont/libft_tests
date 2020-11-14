@@ -21,5 +21,11 @@ int		main()
 	test_memcpy();
 	printf("\n");
 
+	printf(BLUE);
+	printf("%s\n", "TEST FOR MEMCCPY");
+	printf(DEFAULT);
+	test_memccpy();
+	printf("\n");
+
 	return (0);
 }
