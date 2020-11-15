@@ -40,5 +40,26 @@ int		main()
 	test_memmove();
 	printf("\n");
 
+	sleep(1);
+	printf(BLUE);
+	printf("%s\n", "TEST FOR ISALPHA");
+	printf(DEFAULT);
+	test_isalpha();
+	printf("\n");
+
+	sleep(1);
+	printf(BLUE);
+	printf("%s\n", "TEST FOR ISALNUM");
+	printf(DEFAULT);
+	test_isalnum();
+	printf("\n");
+
+	sleep(1);
+	printf(BLUE);
+	printf("%s\n", "TEST FOR ISPRINT");
+	printf(DEFAULT);
+	test_isprint();
+	printf("\n");
+
 	return (0);
 }
