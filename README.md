@@ -40,49 +40,49 @@ Each function is tested in the main, using subfunctions in files `~/*/Libft_test
 ### To Do:
 
 - [x] memset
-- [ ] bzero
+- [x] bzero
 - [x] memcpy
-- [ ] memccpy 
+- [x] memccpy 
 - [x] memmove 
-- [ ] memchr 
-- [ ] memcmp 
-- [ ] strlen 
+- [x] memchr 
+- [ ] memcmp : Nastasia
+- [ ] strlen : Nicolas
 - [x] isalpha 
-- [ ] isdigit 
+- [ ] isdigit : Aurélie
 - [x] isalnum 
-- [ ] isascii 
+- [ ] isascii : Nastasia
 - [x] isprint 
-- [ ] toupper
+- [ ] toupper : Nicolas
 - [x] tolower
-- [ ] strchr 
-- [ ] strrchr 
-- [ ] strncmp
-- [ ] strlcpy 
-- [ ] strlcat
-- [ ] strnstr
-- [ ] atoi
-- [ ] calloc
-- [ ] strdup
-- [ ] substr
-- [ ] strjoin
-- [ ] strtrim
-- [ ] split
-- [ ] itoa
-- [ ] strmapi
-- [ ] putchar_fd
-- [ ] putstr_fd
-- [ ] putendl_fd
-- [ ] putnbr_fd
+- [ ] strchr : Aurélie
+- [ ] strrchr : Nastasia
+- [ ] strncmp : Nicolas
+- [ ] strlcpy : Aurélie
+- [ ] strlcat : Nastasia
+- [ ] strnstr : Nicolas
+- [ ] atoi : Aurélie
+- [ ] calloc : Nastasia
+- [ ] strdup : Nicolas
+- [ ] substr : Aurélie
+- [ ] strjoin : Nastasia
+- [ ] strtrim : Nicolas
+- [ ] split : Aurélie
+- [ ] itoa : Nastasia
+- [ ] strmapi : Nicolas
+- [ ] putchar_fd : Aurélie
+- [ ] putstr_fd : Nastasia
+- [ ] putendl_fd : Nicolas
+- [ ] putnbr_fd : Aurélie
 
 BONUS
 
-- [ ] lstnew
-- [ ] lstadd_front
-- [ ] lstsize
-- [ ] lstlast
-- [ ] lstadd_back
-- [ ] lstdelone
-- [ ] lstclear
-- [ ] lstiter
-- [ ] lstmap
+- [ ] lstnew : Nastasia
+- [ ] lstadd_front : Nicolas
+- [ ] lstsize : Aurelie
+- [ ] lstlast : Nastasia
+- [ ] lstadd_back : Nicolas
+- [ ] lstdelone : Aurélie
+- [ ] lstclear : Nastasia
+- [ ] lstiter : Nicolas
+- [ ] lstmap : Aurélie
 
