@@ -58,14 +58,21 @@ int		test_memchr_basics(void)
 	else
 		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 
-	char *s7 = "";
+	char *s7 = "hello";
 	if (memchr(s7, 'a', 9) != ft_memchr(s7, 'a', 9))
 		printf("%s%s%s", RED, "[KO] : Your memccpy does not work with basic input\n", DEFAULT);
 	else
 		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
 	
-	char *s8 = "";
-	if (memchr(s8, 'a', 9) != ft_memchr(s8, 'a', 9))
+	char *s8 = "hello";
+	if (memchr(s8, 'h', 0) != ft_memchr(s8, 'h', 0))
+		printf("%s%s%s", RED, "[KO] : Your memccpy does not work with basic input\n", DEFAULT);
+	else
+		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
+
+	char s9[6] = "hel\144o\0";
+	//s8[4] = (unsigned char)144;
+	if (memchr(s9, 144, 5) != ft_memchr(s9, 144, 5))
 		printf("%s%s%s", RED, "[KO] : Your memccpy does not work with basic input\n", DEFAULT);
 	else
 		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
