@@ -15,7 +15,7 @@ int		test_isalpha()
 			printf("[K0] : ");
 			if (str[i] == 0)
 				printf("Your isalpha does not work for c = \\0\n");
-			else if (str[i] < 32 || str[i] == 126)
+			else if (str[i] < 32 || str[i] == 127)
 				printf("Your isalpha does not work for non printable characters\n");
 			else if ((str[i] >= 'A' && str[i] <= 'Z') || (str[i] >= 'a' && str[i] <= 'z'))
 				printf("Your isalpha does not work for alpha characters\n");

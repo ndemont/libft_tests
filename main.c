@@ -61,5 +61,12 @@ int		main()
 	test_isprint();
 	printf("\n");
 
+	sleep(1);
+	printf(BLUE);
+	printf("%s\n", "TEST FOR TOLOWER");
+	printf(DEFAULT);
+	test_tolower();
+	printf("\n");
+
 	return (0);
 }

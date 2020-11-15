@@ -8,6 +8,7 @@ SRCS		=	main.c \
 				tests/test_isalpha.c \
 				tests/test_isalnum.c \
 				tests/test_isprint.c \
+				tests/test_tolower.c \
 
 OBJS		=	${SRCS:.c=.o}
 INCLUDES	=	includes
