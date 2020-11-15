@@ -42,6 +42,13 @@ int		main()
 
 	sleep(1);
 	printf(BLUE);
+	printf("%s\n", "TEST FOR MEMCHR");
+	printf(DEFAULT);
+	test_memchr();
+	printf("\n");
+
+	sleep(1);
+	printf(BLUE);
 	printf("%s\n", "TEST FOR ISALPHA");
 	printf(DEFAULT);
 	test_isalpha();
