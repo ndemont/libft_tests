@@ -36,3 +36,53 @@ If you want to compile again: `make re`
 ***If you want to see where you crash:***
 
 Each function is tested in the main, using subfunctions in files `~/*/Libft_tests/tests/test_*.c`. Each file handle a particular function and [OK] are often displayed in the same order of tests.
+
+### To Do:
+
+- [x] memset
+- [ ] bzero
+- [x] memcpy
+- [ ] memccpy 
+- [x] memmove 
+- [ ] memchr 
+- [ ] memcmp 
+- [ ] strlen 
+- [x] isalpha 
+- [ ] isdigit 
+- [x] isalnum 
+- [ ] isascii 
+- [x] isprint 
+- [ ] toupper
+- [x] tolower
+- [ ] strchr 
+- [ ] strrchr 
+- [ ] strncmp
+- [ ] strlcpy 
+- [ ] strlcat
+- [ ] strnstr
+- [ ] atoi
+- [ ] Calloc
+- [ ] Strdup
+- [ ] substr
+- [ ] strjoin
+- [ ] Strtrim
+- [ ] Split
+- [ ] Itoa
+- [ ] strmapi
+- [ ] putchar_fd
+- [ ] putstr_fd
+- [ ] putendl_fd
+- [ ] putnbr_fd
+
+BONUS
+
+- [ ] lstnew
+- [ ] lstadd_front
+- [ ] lstsize
+- [ ] lstlast
+- [ ] lstadd_back
+- [ ] Lstdelone
+- [ ] Lstclear
+- [ ] Lstiter
+- [ ] Lstmap
+
