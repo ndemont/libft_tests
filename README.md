@@ -55,7 +55,7 @@ Each function is tested in the main, using subfunctions in files `~/*/Libft_test
 - [ ] toupper : Nicolas
 - [x] tolower
 - [ ] strchr : Aurélie
-- [ ] strrchr : Nastasia
+- [x] strrchr
 - [ ] strncmp : Nicolas
 - [ ] strlcpy : Aurélie
 - [ ] strlcat : Nastasia
