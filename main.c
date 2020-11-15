@@ -49,6 +49,13 @@ int		main()
 
 	sleep(1);
 	printf(BLUE);
+	printf("%s\n", "TEST FOR STRLEN");
+	printf(DEFAULT);
+	test_strlen();
+	printf("\n");
+
+	sleep(1);
+	printf(BLUE);
 	printf("%s\n", "TEST FOR ISALPHA");
 	printf(DEFAULT);
 	test_isalpha();
