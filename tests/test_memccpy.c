@@ -1,16 +1,5 @@
 #include "libft_tests.h"
 
-//#include <string.h>
-//#include <stdio.h>
-
-//jmp_buf reset3;
-
-//void	term_handle(int sig)
-//{
-//	(void)sig;
-//	longjmp(reset, 1);
-//}
-
 int		test_memccpy_catch_sigbus(void)
 {
 	char *s1 = "";
@@ -52,9 +41,90 @@ int		test_memccpy_catch_segv(void)
 	return (0);
 }
 
+int		test_memccpy_regular(void)
+{
+	char twenty[20] = "0000000000000000000\0";
+	char ft_twenty[20] = "0000000000000000000\0";
+	memccpy(twenty, "hello", 'l', 3);
+	ft_memccpy(ft_twenty, "hello", 'l', 3);
+	if (strcmp(twenty, ft_twenty))
+	{
+		printf(RED);
+		printf("[KO] : Your memccpy does not work with basic input\n");
+		printf(DEFAULT);
+	}
+	else
+		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
+
+	char fts1[4] = "000\0";
+	char s1[4] = "000\0";
+	memccpy(s1, "hello", 'l', 3);
+	ft_memccpy(fts1, "hello", 'l', 3);
+	if (strcmp(s1, fts1))
+		printf("%s%s%s", RED, "[KO] : Your memccpy does not work with basic input\n", DEFAULT);
+	else
+		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
+	
+	char fts2[4] = "000\0";
+	char s2[4] = "000\0";
+	memccpy(s2, "hello", 'a', 3);
+	ft_memccpy(fts2, "hello", 'a', 3);
+	if (strcmp(s2, fts2))
+		printf("%s%s%s", RED, "[KO] : Your memccpy does not work with basic input\n", DEFAULT);
+	else
+		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
+
+	char fts3[6] = "00000\0";
+	char s3[6] = "00000\0";
+	memccpy(s3, "hello", 'e', 5);
+	ft_memccpy(fts3, "hello", 'e', 5);
+	if (strcmp(s3, fts3))
+		printf("%s%s%s", RED, "[KO] : Your memccpy does not work with basic input\n", DEFAULT);
+	else
+		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
+	
+	char fts4[10] = "000000000\0";
+	char s4[10] = "000000000\0";
+	memccpy(s4, "hello", 'q', 4);
+	ft_memccpy(fts4, "hello", 'q', 4);
+	if (strcmp(s4, fts4))
+		printf("%s%s%s", RED, "[KO] : Your memccpy does not work with basic input\n", DEFAULT);
+	else
+		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
+	
+	char fts5[10] = "000000000\0";
+	char s5[10] = "000000000\0";
+	memccpy(s5, "hello", 'q', 9);
+	ft_memccpy(fts5, "hello", 'q', 9);
+	if (strcmp(s5, fts5))
+		printf("%s%s%s", RED, "[KO] : Your memccpy does not work with basic input\n", DEFAULT);
+	else
+		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
+	
+	char fts6[10] = "000000000\0";
+	char s6[10] = "000000000\0";
+	memccpy(s6, "hello", 'q', 0);
+	ft_memccpy(fts5, "hello", 'q', 0);
+	if (strcmp(s6, fts6))
+		printf("%s%s%s", RED, "[KO] : Your memccpy does not work with basic input\n", DEFAULT);
+	else
+		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
+	
+		char fts7[10] = "000000000\0";
+	char s7[10] = "000000000\0";
+	memccpy(s7, "hello", 'l', 0);
+	ft_memccpy(fts5, "hello", 'l', 0);
+	if (strcmp(s7, fts7))
+		printf("%s%s%s", RED, "[KO] : Your memccpy does not work with basic input\n", DEFAULT);
+	else
+		printf("%s%s%s", GREEN, "[OK]\n", DEFAULT);
+	return (1);
+}
+
 int		test_memccpy(void)
 {
 	test_memccpy_catch_sigbus();
 	test_memccpy_catch_segv();
+	test_memccpy_regular();
 	return (3);
 }
