@@ -1,8 +1,6 @@
 # Libft_tests
 ## Authors:
-ndemont: [Github](https://github.com/ndemont)
-
-nboisde: [Github](https://github.com/nboisde)
+ndemont ([Github](https://github.com/ndemont)) && nboisde ([Github](https://github.com/nboisde))
 
 ### Description:
 :wrench: (building in process)
@@ -19,9 +17,7 @@ Your libft must have all the function to make the test run proprerly. You will f
 ```
 git clone git@github.com:nboisde/Libft_tests.git Libft_tests
 ```
-Then copy your libft folder in the root Libft_tests folder.
-
-It should have the name `libft` to works.
+Then copy your libft folder in the root Libft_tests folder (it should have the name `libft` to work)
 
 The path should be as followed:
 ```
