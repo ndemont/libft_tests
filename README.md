@@ -1,6 +1,6 @@
 # Libft_tests
 ## Authors:
-ndemont ([Github](https://github.com/ndemont)) && nboisde ([Github](https://github.com/nboisde))
+ndemont ([Github](https://github.com/ndemont)) && nboisde ([Github](https://github.com/nboisde)) && l-aurelie ([Github](https://github.com/l-aurelie))
 
 ### Description:
 :wrench: (building in process)
