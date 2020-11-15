@@ -61,13 +61,13 @@ Each function is tested in the main, using subfunctions in files `~/*/Libft_test
 - [ ] strlcat
 - [ ] strnstr
 - [ ] atoi
-- [ ] Calloc
-- [ ] Strdup
+- [ ] calloc
+- [ ] strdup
 - [ ] substr
 - [ ] strjoin
-- [ ] Strtrim
-- [ ] Split
-- [ ] Itoa
+- [ ] strtrim
+- [ ] split
+- [ ] itoa
 - [ ] strmapi
 - [ ] putchar_fd
 - [ ] putstr_fd
@@ -81,8 +81,8 @@ BONUS
 - [ ] lstsize
 - [ ] lstlast
 - [ ] lstadd_back
-- [ ] Lstdelone
-- [ ] Lstclear
-- [ ] Lstiter
-- [ ] Lstmap
+- [ ] lstdelone
+- [ ] lstclear
+- [ ] lstiter
+- [ ] lstmap
 
