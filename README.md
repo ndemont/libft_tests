@@ -50,7 +50,7 @@ Each function is tested in the main, using subfunctions in files `~/*/Libft_test
 - [x] isalpha 
 - [ ] isdigit : Aurélie
 - [x] isalnum 
-- [ ] isascii : Nastasia
+- [x] isascii
 - [x] isprint 
 - [ ] toupper : Nicolas
 - [x] tolower
