@@ -77,6 +77,13 @@ int		main()
 
 	sleep(1);
 	printf(BLUE);
+	printf("%s\n", "TEST FOR ISDIGIT");
+	printf(DEFAULT);
+	test_isdigit();
+	printf("\n");
+
+	sleep(1);
+	printf(BLUE);
 	printf("%s\n", "TEST FOR ISPRINT");
 	printf(DEFAULT);
 	test_isprint();
