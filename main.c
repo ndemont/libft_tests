@@ -49,6 +49,13 @@ int		main()
 
 	sleep(1);
 	printf(BLUE);
+	printf("%s\n", "TEST FOR STRLEN");
+	printf(DEFAULT);
+	test_strlen();
+	printf("\n");
+
+	sleep(1);
+	printf(BLUE);
 	printf("%s\n", "TEST FOR ISALPHA");
 	printf(DEFAULT);
 	test_isalpha();
@@ -63,6 +70,20 @@ int		main()
 
 	sleep(1);
 	printf(BLUE);
+	printf("%s\n", "TEST FOR ISASCII");
+	printf(DEFAULT);
+	test_isascii();
+	printf("\n");
+
+	sleep(1);
+	printf(BLUE);
+	printf("%s\n", "TEST FOR ISDIGIT");
+	printf(DEFAULT);
+	test_isdigit();
+	printf("\n");
+
+	sleep(1);
+	printf(BLUE);
 	printf("%s\n", "TEST FOR ISPRINT");
 	printf(DEFAULT);
 	test_isprint();
@@ -73,6 +94,13 @@ int		main()
 	printf("%s\n", "TEST FOR TOLOWER");
 	printf(DEFAULT);
 	test_tolower();
+	printf("\n");
+
+	sleep(1);
+	printf(BLUE);
+	printf("%s\n", "TEST FOR STRRCHR");
+	printf(DEFAULT);
+	test_strrchr();
 	printf("\n");
 
 	return (0);

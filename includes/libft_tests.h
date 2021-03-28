@@ -8,6 +8,7 @@
 # include <unistd.h>
 # include <setjmp.h>
 # include <stdio.h>
+#include <ctype.h>
 
 # define RED		"\033[31m"
 # define GREEN		"\033[32m"
@@ -24,9 +25,13 @@ int		test_bzero(void);
 int		test_memccpy(void);
 int		test_memmove(void);
 int		test_memchr(void);
+int		test_strlen(void);
 int		test_isalpha(void);
 int		test_isalnum(void);
+int		test_isascii(void);
+int     test_isdigit(void);
 int		test_isprint(void);
 int		test_tolower(void);
+int		test_strrchr(void);
 
 #endif
